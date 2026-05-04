@@ -19,10 +19,11 @@ async def get_transaction(transaction_id:int):
         return transaction
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e)) 
-@router.get("/", response_model=list[TransactionResponse])
+@router.get("/",response_model=list[TransactionResponse])
 async def get_all_transactions():
     try:
         transactions = await transaction_service.get_all_transactions()
+        #print(transactions)
         return transactions
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e)) 

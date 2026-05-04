@@ -1,5 +1,5 @@
 #rceate redis client
-import redis
+import redis.asyncio as redis
 import os
 from dotenv import load_dotenv
 env_path = os.path.join(os.path.dirname(__file__), '..', '.env')
