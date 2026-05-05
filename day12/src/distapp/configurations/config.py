@@ -9,3 +9,4 @@ class Config:
         self.api_requests_csv_path = os.getenv('api_requests_csv_path')
         self.delivery_time_csv_path = os.getenv('delivery_time_csv_path')   
         self.sip_path = os.getenv('sip_path')
+        self.uniform_path = os.getenv('uniform_path')
