@@ -20,9 +20,10 @@ def create_exponential_distribution():
 
 def draw_exponential_distribution(random_numbers,t,population):
     plt.figure(figsize=(10, 6))    
-    plt.plot(t, population, marker='o', linestyle='-', color='b')
    
-    plt.title('Exponential Distribution')
+    #plt.hist(random_numbers, bins=30, density=True, alpha=0.6, color='g')
+    plt.plot(t, population, marker='o', linestyle='-', color='b')
+    plt.title('Exponential Population Growth in Angola')
     plt.xlabel('year')
     plt.ylabel('Density')
     plt.show()
