@@ -22,7 +22,7 @@ def create_poisson_distribution():
     df['hour'] = df['time'].dt.hour
     max_hour = df['hour'].max()
 
-    x = range(0, max_hour + 1)
+    x = range(0, max_hour)
     
     # Calculate the Poisson PMF for each x value
     pmf = poisson.pmf(x, lambda_)
