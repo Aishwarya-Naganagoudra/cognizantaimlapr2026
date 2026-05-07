@@ -1,16 +1,22 @@
-from statsig import statsig_event,statsig,statsig_user
+from statsig import StatsigEvent, statsig, StatsigUser, statsig_event
 
 def abtest_tool():
     # Initialize Statsig with your server secret key
     statsig.initialize("secret-uOj2IK6AXOoOgplkFEVAx97gmDTff0ammwjQePsWxLS")
     for i in range(10):
-        # Create a user object with custom properties
-        user = statsig_user.User(
-            user_id=f"user_{i}",
-            email=f"user_{i}@example.com"
+        user = StatsigUser(user_id=f"user{i}", email="aimltraining2026@gmail.com")
+
+        event = StatsigEvent(
+            user=user,
+            event_name="python_test_event"
         )
-        # Log an event for the user
-        statsig_event.log_event(user, "test_event", {"value": i})
+
+        print("Sending event...")
+
+        statsig.log_event(event)
+
+        
+        
         # Check if the user is in the experiment
         in_experiment = statsig.check_gate(user, "experiment_name")
         if in_experiment:
