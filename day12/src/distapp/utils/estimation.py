@@ -40,6 +40,16 @@ def plot_estimation(sales_date, sales_amount, mean_sales, std_dev_sales):
     plt.legend()
     plt.show()
 
+def interval_estimation():
+    config = Config()
+    data = pd.read_csv(config.estimation_path)
+    sales_amount = data['sales_amount']    
+    # Calculate mean and standard deviation
+    mean_sales = sales_amount.mean()
+    min_sales = sales_amount.min()
+    max_sales = sales_amount.max()        
+    return mean_sales, min_sales, max_sales
+
 if __name__ == "__main__":
     mean_sales, std_dev_sales, mean_purchase, std_dev_purchase = estimation()
     print(f"Sales Amount - Mean: {mean_sales}, Standard Deviation: {std_dev_sales}")
@@ -48,3 +58,8 @@ if __name__ == "__main__":
     x=pd.to_datetime(df['date_of_sales'])
     y=df['sales_amount']
     plot_estimation(x,y, mean_sales, std_dev_sales)
+
+    #interval estimation
+    mean_sales, min_sales, max_sales = interval_estimation()
+
+    print(f"Sales Amount - Mean: {mean_sales}, Min: {min_sales}, Max: {max_sales}")
