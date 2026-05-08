@@ -15,9 +15,11 @@ def calculate_medicine_effect(medicine_effect, control_effect):
 if __name__ == "__main__":
     config = Config()
     df=pd.read_csv(config.effectiveness_path)
-    medicine_effect_count = df['medicine_name']=='Metformin'.count()
+    medicine_effect_count = (df['medicine_name'] == 'Metformin').sum()
+    print(medicine_effect_count)
     medicine_effect_mean= medicine_effect_count/len(df)
-    control_effect_count = df['medicine_name']=='Glimepiride'.count()
+    control_effect_count = (df['medicine_name']=='Glimepiride').sum()
+    print(control_effect_count)
     control_effect_mean= control_effect_count/len(df)
     effect_size = calculate_medicine_effect(medicine_effect_mean, control_effect_mean) 
 
