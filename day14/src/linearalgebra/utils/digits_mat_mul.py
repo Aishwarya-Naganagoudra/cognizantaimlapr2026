@@ -13,14 +13,14 @@ if __name__ == "__main__":
     #define x as the first 64 columns of the dataframe
     x = df.iloc[1:5, 1:65].values
     print("x shape: ", x.shape)
-    #define w as a random matrix of shape (64,1)
-    w = np.random.rand(64,1)
-    #print("w shape: ", w.shape)
+    #define w as a random matrix of shape (64,4)
+    w = np.random.rand(64,4)
+    print("w shape: ", w.shape)
     #print("x: ", x)
     #print("w: ", w)
     #define b as a random scalar
-    b = np.random.rand(32)
-    mat_mul_result = mat_mul(w,x.T,b)
-    print("mat_mul_result shape: ", mat_mul_result.shape)
+    b = np.random.rand(1)
+    mat_mul_result = mat_mul(w,x,b)
+    print("mat_mul_result shape: ", mat_mul_result)
  
 
