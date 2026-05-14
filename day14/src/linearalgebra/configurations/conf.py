@@ -20,3 +20,4 @@ class Config:
     cleandata_path = os.getenv('cleandata_path')
     cleandata_path_v1 = os.getenv('cleandata_path_v1')
     population_path = os.getenv('population_path')
+    ceo_salary_path = os.getenv('ceo_salary_path')

@@ -1,0 +1,101 @@
+ceo_id,ceo_name,company_name,salary_usd
+CEO001,Satya Nadella,Microsoft,54000000
+CEO002,Tim Cook,Apple,63200000
+CEO003,Sundar Pichai,Google,226000000
+CEO004,Andy Jassy,Amazon,29200000
+CEO005,Mark Zuckerberg,Meta,27000000
+CEO006,Elon Musk,Tesla,0
+CEO007,Jensen Huang,NVIDIA,34500000
+CEO008,Arvind Krishna,IBM,20500000
+CEO009,Shantanu Narayen,Adobe,44700000
+CEO010,Pat Gelsinger,Intel,17900000
+CEO011,Lisa Su,AMD,30800000
+CEO012,Chuck Robbins,Cisco,32000000
+CEO013,Marc Benioff,Salesforce,39700000
+CEO014,Safra Catz,Oracle,138000000
+CEO015,Raj Subramaniam,FedEx,13500000
+CEO016,Jamie Dimon,JPMorgan Chase,36000000
+CEO017,Brian Moynihan,Bank of America,31000000
+CEO018,Jane Fraser,Citigroup,26000000
+CEO019,David Solomon,Goldman Sachs,25000000
+CEO020,James Gorman,Morgan Stanley,31000000
+CEO021,Doug McMillon,Walmart,27000000
+CEO022,Brian Cornell,Target,19800000
+CEO023,Craig Jelinek,Costco,8100000
+CEO024,Corie Barry,Best Buy,15500000
+CEO025,Rosalind Brewer,Walgreens Boots Alliance,28000000
+CEO026,Kevin Johnson,Starbucks,20100000
+CEO027,Chris Kempczinski,McDonalds,20700000
+CEO028,Darren Woods,ExxonMobil,35900000
+CEO029,Mike Wirth,Chevron,29500000
+CEO030,Vicki Hollub,Occidental Petroleum,15400000
+CEO031,David Ricks,Eli Lilly,26700000
+CEO032,Albert Bourla,Pfizer,33600000
+CEO033,Emma Walmsley,GSK,14500000
+CEO034,Joaquin Duato,Johnson & Johnson,28300000
+CEO035,Pascal Soriot,AstraZeneca,22000000
+CEO036,Reed Hastings,Netflix,51000000
+CEO037,Bob Iger,Disney,31000000
+CEO038,David Zaslav,Warner Bros Discovery,49800000
+CEO039,Ted Sarandos,Netflix,50000000
+CEO040,Shou Zi Chew,TikTok,12000000
+CEO041,Daniel Ek,Spotify,9800000
+CEO042,Ryan Roslansky,LinkedIn,14000000
+CEO043,Eric Yuan,Zoom,18000000
+CEO044,Drew Houston,Dropbox,16500000
+CEO045,Melanie Perkins,Canva,11000000
+CEO046,Tobias Lutke,Shopify,21000000
+CEO047,Stewart Butterfield,Slack,15000000
+CEO048,Whitney Wolfe Herd,Bumble,22000000
+CEO049,Brian Chesky,Airbnb,19000000
+CEO050,Dara Khosrowshahi,Uber,24000000
+CEO051,Logan Green,Lyft,9500000
+CEO052,Adena Friedman,Nasdaq,17000000
+CEO053,Stephen Schwarzman,Blackstone,253000000
+CEO054,Larry Fink,BlackRock,36000000
+CEO055,Ajay Banga,Mastercard,24000000
+CEO056,Michael Miebach,Mastercard,17000000
+CEO057,Brian Niccol,Chipotle,17600000
+CEO058,John Donahoe,Nike,29000000
+CEO059,Fran Horowitz,Abercrombie & Fitch,11000000
+CEO060,Calvin McDonald,Lululemon,14200000
+CEO061,Alan Jope,Unilever,12700000
+CEO062,Noel Quinn,HSBC,11800000
+CEO063,Bill Winters,Standard Chartered,10400000
+CEO064,Christian Sewing,Deutsche Bank,9800000
+CEO065,Makoto Uchida,Nissan,7200000
+CEO066,Akio Toyoda,Toyota,9900000
+CEO067,Mary Barra,General Motors,29000000
+CEO068,Jim Farley,Ford,21000000
+CEO069,Oliver Blume,Volkswagen,13000000
+CEO070,Benedetto Vigna,Ferrari,8500000
+CEO071,Luca de Meo,Renault,7600000
+CEO072,Guillaume Faury,Airbus,9800000
+CEO073,Dave Calhoun,Boeing,22500000
+CEO074,Kelly Ortberg,Rockwell Collins,7800000
+CEO075,Arne Sorenson,Marriott,17000000
+CEO076,Sebastian Bazin,Accor,6300000
+CEO077,Keith Barr,IHG Hotels,5900000
+CEO078,Herve Humler,Ritz Carlton,4500000
+CEO079,Ted Christie,Spirit Airlines,7200000
+CEO080,Ed Bastian,Delta Air Lines,12500000
+CEO081,Scott Kirby,United Airlines,14300000
+CEO082,Robert Isom,American Airlines,11800000
+CEO083,Marc Casper,Thermo Fisher Scientific,19800000
+CEO084,Tom Siebel,C3.ai,24000000
+CEO085,Nikesh Arora,Palo Alto Networks,151000000
+CEO086,George Kurtz,CrowdStrike,39000000
+CEO087,Matthew Prince,Cloudflare,16500000
+CEO088,Jay Chaudhry,Zscaler,29000000
+CEO089,Hock Tan,Broadcom,161000000
+CEO090,Antonio Neri,HPE,18500000
+CEO091,Michael Dell,Dell Technologies,39800000
+CEO092,Enrique Lores,HP Inc,19000000
+CEO093,Sanjay Mehrotra,Micron Technology,22400000
+CEO094,Cristiano Amon,Qualcomm,23000000
+CEO095,Rene Haas,Arm Holdings,14300000
+CEO096,Masayoshi Son,SoftBank,9300000
+CEO097,Lei Jun,Xiaomi,6700000
+CEO098,Ren Zhengfei,Huawei,5200000
+CEO099,Mukesh Ambani,Reliance Industries,18000000
+CEO100,Gautam Adani,Adani Group,9500000
