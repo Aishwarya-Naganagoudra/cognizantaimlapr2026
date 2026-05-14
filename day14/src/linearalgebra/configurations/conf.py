@@ -19,3 +19,4 @@ class Config:
     movie_path = os.getenv('movie_path')
     cleandata_path = os.getenv('cleandata_path')
     cleandata_path_v1 = os.getenv('cleandata_path_v1')
+    population_path = os.getenv('population_path')
