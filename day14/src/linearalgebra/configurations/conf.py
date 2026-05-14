@@ -17,3 +17,4 @@ class Config:
     sales_path = os.getenv('sales_path')
     cyber_path = os.getenv('cyber_path')
     movie_path = os.getenv('movie_path')
+    cleandata_path = os.getenv('cleandata_path')

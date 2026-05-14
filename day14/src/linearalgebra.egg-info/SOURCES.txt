@@ -10,11 +10,13 @@ src/linearalgebra/configurations/conf.py
 src/linearalgebra/utils/__init__.py
 src/linearalgebra/utils/census_mat_transpose.py
 src/linearalgebra/utils/cyber_svd.py
+src/linearalgebra/utils/data_clean.py
 src/linearalgebra/utils/digits_mat_mul.py
 src/linearalgebra/utils/discount_dotproduct.py
 src/linearalgebra/utils/eigen.py
 src/linearalgebra/utils/image_brightness_mat_add.py
 src/linearalgebra/utils/image_mat_inv.py
 src/linearalgebra/utils/img_trans_eigen.py
+src/linearalgebra/utils/movie_svd.py
 src/linearalgebra/utils/sales_mat_det.py
 src/linearalgebra/utils/weather_change_mat_sub.py
