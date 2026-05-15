@@ -11,6 +11,8 @@ def linear_search(file_name):
     name_to_search = input("Enter the name to search: ")
     step = 0
     #linear search algorithm
+    #print order of complexity of linear search algorithm
+    print("Linear search algorithm has a time complexity of O(n).") 
     for i in range(len(names)):
         step += 1
         if names[i] == name_to_search:
@@ -22,12 +24,15 @@ def binary_search(file_name):
     df = pd.read_csv(file_name)
     #get the names column from the dataframe
     names = df['search_page_name'].tolist()
+
     #sort the names list
     names.sort()
     #get the name to search from the user
     name_to_search = input("Enter the name to search: ")
-    step = 1
+    step = 0
     #binary search algorithm
+    #print order of complexity of binary search algorithm
+    print("Binary search algorithm has a time complexity of O(log n).")
     left, right = 0, len(names) - 1
     while left <= right:
         step += 1
