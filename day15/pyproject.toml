@@ -1,0 +1,39 @@
+[project]
+name = "kafka-streaming-cli"
+version = "0.1.0"
+description = "A Kafka streaming command-line interface CRUD tool for MongoDB."
+authors = [
+    { name = "Paramswari", email = "parameswaribala@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [       
+   
+  "numpy>=2.0.0",
+  "pandas>=2.0.0",
+  "matplotlib>=3.0.0",
+  "scipy>=1.0.0",
+  "statsmodels>=0.14.0",
+  "scikit-learn>=1.5.0",
+  "pytest>=8.0.0",
+  "confluent-kafka>=2.0",
+  "kafka-python>=2.0",
+  "python-dotenv>=0.20.0",
+   
+]
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "black>=24.0.0",
+    "isort>=5.0.0",
+    
+]
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+line-length = 88
+target-version = ["py313"]
+[tool.isort]
+profile = "black"
