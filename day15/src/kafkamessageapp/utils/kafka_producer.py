@@ -1,4 +1,5 @@
 #publish kafka message to aiven kafka cluster topic name comedy-movies
+import json
 from pathlib import Path
 from confluent_kafka import Producer
 from kafkamessageapp.configurations.conf import KafkaConfig
@@ -20,14 +21,14 @@ def kafka_producer():
     return producer
 
 def publish_message(producer, topic, message):
-    producer.produce(topic, value=message, callback=message_delivery_report)
+    producer.produce(topic, value=json.dumps(message), callback=message_delivery_report)
     producer.flush()
 
 def message_delivery_report(err, msg):
     if err is not None:
         print(f'Message delivery failed: {err}')
     else:
-        print(f'Message delivered to {msg.topic()} [{msg.partition()}] at offset {msg.offset()}')
+        print(f'Message delivered')
 
 
 if __name__ == "__main__":
