@@ -9,6 +9,8 @@ src/linearalgebra/configurations/__init__.py
 src/linearalgebra/configurations/conf.py
 src/linearalgebra/utils/__init__.py
 src/linearalgebra/utils/bigoprodrecomm.py
+src/linearalgebra/utils/bigosort.py
+src/linearalgebra/utils/broadcasting.py
 src/linearalgebra/utils/census_mat_transpose.py
 src/linearalgebra/utils/centering.py
 src/linearalgebra/utils/cyber_svd.py
@@ -19,9 +21,11 @@ src/linearalgebra/utils/eigen.py
 src/linearalgebra/utils/image_brightness_mat_add.py
 src/linearalgebra/utils/image_mat_inv.py
 src/linearalgebra/utils/img_trans_eigen.py
+src/linearalgebra/utils/kafka_producer.py
 src/linearalgebra/utils/l2_norm.py
 src/linearalgebra/utils/minmax_norm.py
 src/linearalgebra/utils/movie_svd.py
+src/linearalgebra/utils/parallel.py
 src/linearalgebra/utils/robust_scalar.py
 src/linearalgebra/utils/sales_mat_det.py
 src/linearalgebra/utils/search_algo.py
