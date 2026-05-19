@@ -21,6 +21,7 @@ Requires-Dist: pymysql>=1.0.0
 Requires-Dist: mysql-connector-python>=8.0.0
 Requires-Dist: sqlalchemy>=2.0.0
 Requires-Dist: pymongo>=4.0.0
+Requires-Dist: certifi>=2024.0.0
 Provides-Extra: dev
 Requires-Dist: pytest>=8.0.0; extra == "dev"
 Requires-Dist: black>=24.0.0; extra == "dev"

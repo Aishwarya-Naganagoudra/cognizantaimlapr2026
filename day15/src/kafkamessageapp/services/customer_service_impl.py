@@ -8,6 +8,8 @@ import great_expectations.expectations as gxe
 import pandas as pd
 from kafkamessageapp.repositories.customer_repository_impl import CustomerRepositoryImpl
 from kafkamessageapp.services.customer_service import CustomerService
+from kafkamessageapp.models.customer import Customer
+from kafkamessageapp.models.full_name import FullName
 class CustomerServiceImpl(CustomerService):
     def __init__(self):
         self.customer_repository = CustomerRepositoryImpl()
@@ -40,6 +42,7 @@ class CustomerServiceImpl(CustomerService):
         print("Customer data validated successfully")
         self.suite, self.batch_definition, self.data_asset, self.data_source = self.ge_suite()
         # ─── EXERCISE 1: Schema — column presence & uniqueness ────────────────────────
+       
         print("── Exercise 1: Schema")
         self.suite.add_expectation(gxe.ExpectColumnToExist(column="id"))
         self.suite.add_expectation(gxe.ExpectColumnToExist(column="first_name"))
@@ -60,8 +63,9 @@ class CustomerServiceImpl(CustomerService):
 
         batch      = self.batch_definition.get_batch(batch_parameters={"dataframe": self.df})
         results    = validation_definition.run(batch_parameters={"dataframe": self.df})
- 
+     
         print(results)  
+          # Clean up the data source after validation
     def customer_data_quality_check(self):
         #check point data quality for customer data
         print("Customer data quality check completed successfully")
@@ -87,3 +91,22 @@ class CustomerServiceImpl(CustomerService):
         results    = validation_definition.run(batch_parameters={"dataframe": self.df})
  
         print(results)  
+
+    def create_customer_from_dataframe(self):
+
+        #get data from dataframe and create customer object
+        self.df = self.create_dataframe()
+        self.customers = []
+        for _, row in self.df.iterrows():
+            customer = Customer(
+                id=row["id"],
+                first_name=row["first_name"],
+                last_name=row["last_name"],
+                email=row["email"],
+                password=row["password"],
+                created_at=row["created_at"],
+                updated_at=row["updated_at"]
+            )
+            self.customers.append(customer)
+        #create customer from dataframe
+        self.customer_repository.create_customer(self.customers)
