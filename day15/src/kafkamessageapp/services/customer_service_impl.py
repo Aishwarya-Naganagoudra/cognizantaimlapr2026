@@ -30,6 +30,7 @@ class CustomerServiceImpl(CustomerService):
 
         #validate customer data retrieved from database
         print("Customer data validated successfully")
+        self.suite=self.ge_suite()
         # ─── EXERCISE 1: Schema — column presence & uniqueness ────────────────────────
         print("── Exercise 1: Schema")
         self.suite.add_expectation(gxe.ExpectColumnToExist(column="id"))
@@ -39,5 +40,6 @@ class CustomerServiceImpl(CustomerService):
         self.suite.add_expectation(gxe.ExpectColumnToExist(column="password"))
         self.suite.add_expectation(gxe.ExpectColumnToExist(column="created_at"))
         self.suite.add_expectation(gxe.ExpectColumnToExist(column="updated_at"))
+        self.suite.add_expectation(gxe.ExpectColumnValuesToBeUnique(column="id"))
 
      
