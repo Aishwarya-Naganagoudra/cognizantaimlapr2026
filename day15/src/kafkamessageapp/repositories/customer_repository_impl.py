@@ -4,7 +4,7 @@ from kafkamessageapp.models.customer import Customer
 from kafkamessageapp.models.full_name import FullName
 from kafkamessageapp.repositories.customer_repository import CustomerRepository
 from kafkamessageapp.configurations.mysql_conf import session_local
-from kafkamessageapp.configurations.conf import client,db
+from kafkamessageapp.configurations.conf import KafkaConfig
 
 
 from datetime import datetime
@@ -22,8 +22,8 @@ class CustomerRepositoryImpl(CustomerRepository):
 
      def create_customer(self, customers):
            #write to mongodb
-           mongo_client = client
-           mongo_db = db
+           mongo_client = KafkaConfig.client
+           mongo_db = KafkaConfig.db
            customer_collection = mongo_db["customers"]
            for customer in customers:
                   customer_dict = {
