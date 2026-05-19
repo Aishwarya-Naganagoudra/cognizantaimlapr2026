@@ -1,4 +1,8 @@
 #create customer service implementation class to validate customer data retrieved from database 
+from unittest import suite
+
+from unittest import suite
+
 import great_expectations as gx
 import great_expectations.expectations as gxe
 import pandas as pd
@@ -19,13 +23,17 @@ class CustomerServiceImpl(CustomerService):
         )
         return self.suite, self.batch_definition, self.data_asset, self.data_source
     
+    def create_dataframe(self):
+         self.customers = self.customer_repository.get_all_customers() 
+        #create pandas dataframe from customer data
+         self.df = pd.DataFrame([customer.__dict__ for customer in self.customers]
+                               ,columns=["id","first_name","last_name","email","password","created_at","updated_at"])
+         print(self.df.head())
+         return self.df
+ 
     def validate_customer_data(self):
         
-        self.customers = self.customer_repository.get_all_customers() 
-        #create pandas dataframe from customer data
-        self.df = pd.DataFrame([customer.__dict__ for customer in self.customers]
-                               ,columns=["id","first_name","last_name","email","password","created_at","updated_at"])
-        print(self.df.head())
+        self.df = self.create_dataframe()
         #check point schema validation for customer data
 
         #validate customer data retrieved from database
@@ -44,7 +52,32 @@ class CustomerServiceImpl(CustomerService):
         #validate customer data using expectation suite
         validation_definition = self.context.validation_definitions.add(
             gx.ValidationDefinition(
-                name="transactions_validation",
+                name="customer_data_validation",
+                data=self.batch_definition,
+                suite=self.suite,
+            )
+        )
+
+        batch      = self.batch_definition.get_batch(batch_parameters={"dataframe": self.df})
+        results    = validation_definition.run(batch_parameters={"dataframe": self.df})
+ 
+        print(results)  
+    def customer_data_quality_check(self):
+        #check point data quality for customer data
+        print("Customer data quality check completed successfully")
+        self.df= self.create_dataframe()
+        self.suite, self.batch_definition, self.data_asset, self.data_source = self.ge_suite()
+        self.suite.add_expectation(gxe.ExpectColumnValuesToNotBeNull(column="id"))
+        # T004 has null user_id — will FAIL
+        self.suite.add_expectation(gxe.ExpectColumnValuesToNotBeNull(column="first_name"))
+        # T008 has null amount — will FAIL
+        self.suite.add_expectation(gxe.ExpectColumnValuesToNotBeNull(column="last_name"))
+        # category: allow up to 20% nulls via mostly threshold
+        self.suite.add_expectation(gxe.ExpectColumnValuesToNotBeNull(column="email"))
+        #validate customer data using expectation suite
+        validation_definition = self.context.validation_definitions.add(
+            gx.ValidationDefinition(
+                name="customer_data_validation",
                 data=self.batch_definition,
                 suite=self.suite,
             )
