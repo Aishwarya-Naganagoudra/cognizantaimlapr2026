@@ -21,3 +21,4 @@ src/kafkamessageapp/utils/__init__.py
 src/kafkamessageapp/utils/gepipelineapp.py
 src/kafkamessageapp/utils/kafka_consumer.py
 src/kafkamessageapp/utils/kafka_producer.py
+src/kafkamessageapp/utils/mlpipeline.py

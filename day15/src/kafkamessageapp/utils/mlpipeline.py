@@ -41,6 +41,8 @@ def create_pipeline(pizza_data):
     #plot the results
     plt.scatter(xtest["pizza_size"], ytest, color="blue", label="Actual")
     plt.scatter(xtest["pizza_size"], predictions, color="red", label="Predicted")
+    #plot the line of best fit
+    plt.plot(xtest["pizza_size"], predictions, color="green", label="Line of Best Fit")
     plt.xlabel("Pizza Size")
     plt.ylabel("Pizza Rate")
     plt.title("Actual vs Predicted Pizza Rate")

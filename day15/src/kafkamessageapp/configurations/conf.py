@@ -15,3 +15,4 @@ class KafkaConfig:
     client = MongoClient(os.getenv("conn_string"), tls=True,tlsCAFile=certifi.where())
     db = client["customerdb"]
     pizza_path = os.getenv('pizza_path')
+    report_path = os.getenv('report_path')
