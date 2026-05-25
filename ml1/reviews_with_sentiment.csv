@@ -1,0 +1,101 @@
+review_id,product_id,product_name,reviewer,rating,review_text,date,sentiment,confidence_score
+1,102,Bluetooth Headphones,Amit,3,Good but could be improved.,2025-04-25,POSITIVE,0.9798
+2,103,Laptop Backpack,Lakshmi,1,Had several issues during usage.,2025-02-14,NEGATIVE,0.9976
+3,110,Portable SSD,Karthik,1,Poor quality and disappointing.,2025-02-17,NEGATIVE,0.9998
+4,104,Smart Watch,Sneha,5,Highly recommended for daily use.,2025-01-14,POSITIVE,0.9994
+5,109,Phone Case,Sneha,5,Great product with nice build quality.,2025-04-23,POSITIVE,0.9999
+6,108,Office Chair,Ananya,3,"Average product, does the job.",2026-01-24,POSITIVE,0.9969
+7,103,Laptop Backpack,Lakshmi,4,Works exactly as expected.,2025-05-23,POSITIVE,0.9992
+8,103,Laptop Backpack,Sneha,3,"Average product, does the job.",2025-02-17,POSITIVE,0.9969
+9,107,Water Bottle,Priya,3,Works fine for basic needs.,2025-11-06,POSITIVE,0.9995
+10,105,USB-C Charger,Nisha,1,Very uncomfortable to use.,2025-10-02,NEGATIVE,0.9997
+11,102,Bluetooth Headphones,Pooja,4,Excellent quality and easy to use.,2025-10-10,POSITIVE,0.9999
+12,105,USB-C Charger,Rahul,5,Works exactly as expected.,2025-10-23,POSITIVE,0.9992
+13,104,Smart Watch,Lakshmi,1,Poor quality and disappointing.,2025-12-05,NEGATIVE,0.9998
+14,104,Smart Watch,Nisha,3,"Average product, does the job.",2026-03-14,POSITIVE,0.9969
+15,104,Smart Watch,Rahul,1,Very uncomfortable to use.,2025-05-23,NEGATIVE,0.9997
+16,108,Office Chair,Suresh,3,Good but could be improved.,2025-07-09,POSITIVE,0.9798
+17,106,Gaming Keyboard,Sneha,3,"Average product, does the job.",2025-11-08,POSITIVE,0.9969
+18,103,Laptop Backpack,Vijay,2,Stopped working after a few days.,2025-08-25,NEGATIVE,0.9997
+19,107,Water Bottle,Arjun,5,Very useful and worth the money.,2025-12-17,POSITIVE,0.9999
+20,106,Gaming Keyboard,Rahul,1,Stopped working after a few days.,2026-02-25,NEGATIVE,0.9997
+21,101,Wireless Mouse,Nisha,3,Decent quality for the price.,2025-05-18,POSITIVE,0.9998
+22,102,Bluetooth Headphones,Sneha,5,Works exactly as expected.,2025-04-19,POSITIVE,0.9992
+23,108,Office Chair,Karthik,4,Very useful and worth the money.,2025-05-16,POSITIVE,0.9999
+24,103,Laptop Backpack,Sneha,5,Highly recommended for daily use.,2025-05-15,POSITIVE,0.9994
+25,110,Portable SSD,Karthik,5,Great product with nice build quality.,2025-07-05,POSITIVE,0.9999
+26,104,Smart Watch,Ravi,5,Great product with nice build quality.,2025-02-16,POSITIVE,0.9999
+27,101,Wireless Mouse,Rahul,1,Stopped working after a few days.,2025-11-18,NEGATIVE,0.9997
+28,103,Laptop Backpack,Nisha,4,Highly recommended for daily use.,2025-02-02,POSITIVE,0.9994
+29,107,Water Bottle,Karthik,5,Great product with nice build quality.,2025-09-28,POSITIVE,0.9999
+30,105,USB-C Charger,Vijay,1,Poor quality and disappointing.,2025-12-16,NEGATIVE,0.9998
+31,109,Phone Case,Nisha,3,Works fine for basic needs.,2025-02-27,POSITIVE,0.9995
+32,105,USB-C Charger,Karthik,2,Very uncomfortable to use.,2025-01-02,NEGATIVE,0.9997
+33,105,USB-C Charger,Vijay,2,Had several issues during usage.,2026-04-13,NEGATIVE,0.9976
+34,102,Bluetooth Headphones,Rahul,3,"Not bad, but expected more.",2025-11-08,NEGATIVE,0.8341
+35,104,Smart Watch,Ravi,3,Good but could be improved.,2025-10-04,POSITIVE,0.9798
+36,109,Phone Case,Pooja,1,Had several issues during usage.,2025-06-15,NEGATIVE,0.9976
+37,108,Office Chair,Amit,1,Not worth the money.,2026-03-26,NEGATIVE,0.9998
+38,105,USB-C Charger,Sneha,1,Stopped working after a few days.,2026-03-26,NEGATIVE,0.9997
+39,110,Portable SSD,Priya,1,Very uncomfortable to use.,2026-02-22,NEGATIVE,0.9997
+40,102,Bluetooth Headphones,Nisha,5,Very useful and worth the money.,2025-03-07,POSITIVE,0.9999
+41,108,Office Chair,Vijay,2,Not worth the money.,2025-09-28,NEGATIVE,0.9998
+42,110,Portable SSD,Karthik,2,Had several issues during usage.,2026-01-22,NEGATIVE,0.9976
+43,104,Smart Watch,Lakshmi,3,Decent quality for the price.,2025-12-10,POSITIVE,0.9998
+44,106,Gaming Keyboard,Meena,5,Great product with nice build quality.,2025-03-03,POSITIVE,0.9999
+45,104,Smart Watch,Sneha,1,Not worth the money.,2025-01-11,NEGATIVE,0.9998
+46,110,Portable SSD,Vijay,2,Had several issues during usage.,2025-04-23,NEGATIVE,0.9976
+47,101,Wireless Mouse,Priya,1,Stopped working after a few days.,2025-02-04,NEGATIVE,0.9997
+48,101,Wireless Mouse,Rahul,3,"Average product, does the job.",2025-09-21,POSITIVE,0.9969
+49,104,Smart Watch,Arjun,4,Very useful and worth the money.,2025-10-04,POSITIVE,0.9999
+50,103,Laptop Backpack,Lakshmi,5,Highly recommended for daily use.,2025-08-31,POSITIVE,0.9994
+51,104,Smart Watch,Nisha,4,Great product with nice build quality.,2025-04-08,POSITIVE,0.9999
+52,102,Bluetooth Headphones,Priya,4,Works exactly as expected.,2025-08-05,POSITIVE,0.9992
+53,107,Water Bottle,Meena,1,Poor quality and disappointing.,2025-02-01,NEGATIVE,0.9998
+54,107,Water Bottle,Lakshmi,3,"Average product, does the job.",2025-05-08,POSITIVE,0.9969
+55,104,Smart Watch,Sneha,5,Great product with nice build quality.,2025-03-13,POSITIVE,0.9999
+56,107,Water Bottle,Ravi,3,Decent quality for the price.,2025-05-08,POSITIVE,0.9998
+57,102,Bluetooth Headphones,Meena,5,Excellent quality and easy to use.,2025-01-26,POSITIVE,0.9999
+58,109,Phone Case,Rahul,1,Poor quality and disappointing.,2026-04-20,NEGATIVE,0.9998
+59,104,Smart Watch,Ravi,4,Great product with nice build quality.,2025-09-04,POSITIVE,0.9999
+60,104,Smart Watch,Rahul,4,Excellent quality and easy to use.,2025-03-26,POSITIVE,0.9999
+61,107,Water Bottle,Amit,4,Works exactly as expected.,2026-04-20,POSITIVE,0.9992
+62,108,Office Chair,Arjun,4,Highly recommended for daily use.,2025-12-05,POSITIVE,0.9994
+63,108,Office Chair,Ravi,2,Not worth the money.,2025-04-22,NEGATIVE,0.9998
+64,101,Wireless Mouse,Ananya,5,Excellent quality and easy to use.,2026-01-18,POSITIVE,0.9999
+65,106,Gaming Keyboard,Amit,1,Had several issues during usage.,2025-09-02,NEGATIVE,0.9976
+66,109,Phone Case,Pooja,5,Very useful and worth the money.,2025-01-30,POSITIVE,0.9999
+67,109,Phone Case,Priya,2,Poor quality and disappointing.,2025-11-01,NEGATIVE,0.9998
+68,102,Bluetooth Headphones,Suresh,2,Very uncomfortable to use.,2025-03-03,NEGATIVE,0.9997
+69,110,Portable SSD,Sneha,5,Highly recommended for daily use.,2025-01-21,POSITIVE,0.9994
+70,110,Portable SSD,Priya,4,Highly recommended for daily use.,2025-10-17,POSITIVE,0.9994
+71,109,Phone Case,Divya,3,Good but could be improved.,2025-12-09,POSITIVE,0.9798
+72,106,Gaming Keyboard,Sneha,3,Decent quality for the price.,2025-03-09,POSITIVE,0.9998
+73,105,USB-C Charger,Meena,3,"Average product, does the job.",2025-01-05,POSITIVE,0.9969
+74,108,Office Chair,Ananya,5,Excellent quality and easy to use.,2025-02-07,POSITIVE,0.9999
+75,109,Phone Case,Sneha,5,Works exactly as expected.,2025-03-09,POSITIVE,0.9992
+76,106,Gaming Keyboard,Pooja,1,Stopped working after a few days.,2025-07-09,NEGATIVE,0.9997
+77,105,USB-C Charger,Ravi,4,Highly recommended for daily use.,2025-12-27,POSITIVE,0.9994
+78,105,USB-C Charger,Ananya,5,Excellent quality and easy to use.,2025-12-08,POSITIVE,0.9999
+79,109,Phone Case,Arjun,1,Stopped working after a few days.,2025-05-16,NEGATIVE,0.9997
+80,102,Bluetooth Headphones,Pooja,1,Had several issues during usage.,2025-03-21,NEGATIVE,0.9976
+81,105,USB-C Charger,Arjun,5,Very useful and worth the money.,2026-01-03,POSITIVE,0.9999
+82,106,Gaming Keyboard,Sneha,3,"Not bad, but expected more.",2025-09-08,NEGATIVE,0.8341
+83,105,USB-C Charger,Pooja,1,Poor quality and disappointing.,2025-11-21,NEGATIVE,0.9998
+84,107,Water Bottle,Rahul,3,"Average product, does the job.",2025-01-02,POSITIVE,0.9969
+85,106,Gaming Keyboard,Nisha,2,Not worth the money.,2025-03-24,NEGATIVE,0.9998
+86,108,Office Chair,Vijay,4,Highly recommended for daily use.,2025-01-05,POSITIVE,0.9994
+87,102,Bluetooth Headphones,Priya,2,Had several issues during usage.,2025-01-19,NEGATIVE,0.9976
+88,106,Gaming Keyboard,Ananya,5,Very useful and worth the money.,2025-08-09,POSITIVE,0.9999
+89,103,Laptop Backpack,Amit,3,Works fine for basic needs.,2026-04-06,POSITIVE,0.9995
+90,101,Wireless Mouse,Pooja,3,Good but could be improved.,2025-12-16,POSITIVE,0.9798
+91,104,Smart Watch,Suresh,1,Not worth the money.,2026-02-04,NEGATIVE,0.9998
+92,109,Phone Case,Pooja,4,Highly recommended for daily use.,2026-01-19,POSITIVE,0.9994
+93,103,Laptop Backpack,Pooja,2,Stopped working after a few days.,2026-05-15,NEGATIVE,0.9997
+94,103,Laptop Backpack,Pooja,4,Excellent quality and easy to use.,2025-04-02,POSITIVE,0.9999
+95,106,Gaming Keyboard,Nisha,4,Very useful and worth the money.,2025-05-17,POSITIVE,0.9999
+96,103,Laptop Backpack,Nisha,1,Very uncomfortable to use.,2026-03-23,NEGATIVE,0.9997
+97,101,Wireless Mouse,Rahul,4,Very useful and worth the money.,2025-04-13,POSITIVE,0.9999
+98,108,Office Chair,Divya,3,Good but could be improved.,2025-04-25,POSITIVE,0.9798
+99,101,Wireless Mouse,Suresh,2,Very uncomfortable to use.,2025-06-18,NEGATIVE,0.9997
+100,105,USB-C Charger,Rahul,1,Not worth the money.,2025-06-29,NEGATIVE,0.9998
