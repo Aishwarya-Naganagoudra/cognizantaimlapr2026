@@ -17,7 +17,7 @@ def batch_inference(reviews_csv):
     # Add the results to the DataFrame
     reviews_df['sentiment'] = [result['label'] for result in results]
     #confidence scores
-    reviews_df['confidence'] = [result['score'] for result in results]
+    reviews_df["confidence_score"] = [round(r["score"], 4) for r in results]
     return reviews_df
 
 if __name__ == "__main__":
