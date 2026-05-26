@@ -5,7 +5,8 @@ from orderapp.configurations.mysql_conf import base
 
 from datetime import datetime
 class Order(base):
-
+    #define table name for the order model
+    __tablename__="orders"
     order_id:int=Column(Integer,primary_key=True,autoincrement=True)     
     customer_id:int=Column(Integer,default=0)
     #date of mysql datetime format

@@ -14,10 +14,10 @@ from orderapp.models.order import Order
 base.metadata.create_all(bind=engine)
 #make api call to the customer controller
 
-from orderapp.controllers.order_controller import OrderController
+from orderapp.controllers import order_controller
 
 
-app.include_router(OrderController.router)
+app.include_router(order_controller.order_router)
 
 
 
