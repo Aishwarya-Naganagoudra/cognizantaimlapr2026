@@ -1,4 +1,6 @@
 
+from datetime import datetime
+
 from orderapp.repositories.order_repo import OrderRepository
 from orderapp.dtos.order_request import OrderRequest
 from orderapp.dtos.order_response import OrderResponse
@@ -8,13 +10,17 @@ from orderapp.exceptions.order_exception import OrderException
 class OrderRepoImpl(OrderRepository):
 
     def __init__(self):
-        self.session = session_local
+        self.session = session_local()
 
     def add_order(self, order_request:OrderRequest)->OrderResponse:
         #convert order_request to order model
         order = Order(
             customer_id=order_request.customer_id,
-            order_date=order_request.order_date,
+            #convert string to datetime
+            order_date = datetime.strptime(
+            order_request.order_date,
+                "%Y-%m-%d"
+            ),
             order_status=order_request.order_status,
             order_total=order_request.order_total
         )
