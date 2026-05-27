@@ -107,9 +107,8 @@ def home():
     }
 
 
-@app.post("/api/{version}/payment/{order_id}")
+@app.post("/api/payments/{order_id}")
 async def create_payment_gateway(
-    version: str,
     order_id: int,
     request: Request
 ):
