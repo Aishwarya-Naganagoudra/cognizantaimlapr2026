@@ -26,6 +26,11 @@ dependencies = [
     "python-dotenv>=0.19.0",
     "onnx>=1.15.0",
     "onnxruntime>=1.15.0",
+    "opencv-python>=4.8.0",
+    "mlflow>=2.0.0",
+    "tf2onnx>=1.15.0",
+    "fastapi>=0.110.0",
+    "uvicorn[standard]>=0.29.0",
 ]
 
 [project.optional-dependencies]

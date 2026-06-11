@@ -29,7 +29,7 @@ def simple_nn_process():
     y_scaled=y.values
     #build a simple nn model tensor flow with keras
     model=tf.keras.Sequential([
-        layers.Dense(64, activation='relu', input_shape=(x_scaled.shape[1],)),
+        layers.Dense(64, activation='relu'),
         layers.Dense(32, activation='relu'),
         layers.Dense(1, activation='sigmoid')
     ])
@@ -48,11 +48,12 @@ def simple_nn_process():
    
     print(confusion_matrix(y_scaled, y_pred))
     #print the model weights
-    print("Model Weights:")
+    #print("Model Weights:")
+    '''
     for layer in model.layers:
         weights = layer.get_weights()
         print(weights)
-    
+    '''
    #precision, recall, f1-score
    
     print("Classification Report:")
